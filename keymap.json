@@ -7,15 +7,72 @@
 // from the command palette.
 [
   {
-    "context": "Workspace",
+    "context": "(VimControl && !menu)",
     "bindings": {
-      // "shift shift": "file_finder::Toggle"
-    }
+      "ctrl-u": [
+        "action::Sequence",
+        ["vim::ScrollUp", "editor::ScrollCursorCenter"],
+      ],
+      "ctrl-d": [
+        "action::Sequence",
+        ["vim::ScrollDown", "editor::ScrollCursorCenter"],
+      ],
+      "space p": "editor::Format",
+      "alt-q": "vim::Rewrap",
+      "shift-j": "editor::MoveLineDown",
+      "shift-k": "editor::MoveLineUp",
+    },
   },
   {
-    "context": "Editor && vim_mode == insert",
+    "context": "Editor",
     "bindings": {
-      // "j k": "vim::NormalBefore"
-    }
-  }
+      "ctrl-e": "project_panel::ToggleFocus",
+      "ctrl-h": "pane::ActivatePreviousItem",
+      "ctrl-l": "pane::ActivateNextItem",
+      "ctrl-shift-h": "pane::SwapItemLeft",
+      "ctrl-shift-l": "pane::SwapItemRight",
+      "alt-h": "workspace::ActivatePaneLeft",
+      "alt-l": "workspace::ActivatePaneRight",
+      "alt-j": "workspace::ActivatePaneDown",
+      "alt-k": "workspace::ActivatePaneUp",
+      "alt-shift-h": "workspace::MovePaneLeft",
+      "alt-shift-l": "workspace::MovePaneRight",
+      "alt-shift-j": "workspace::MovePaneDown",
+      "alt-shift-k": "workspace::MovePaneUp",
+    },
+  },
+  {
+    "context": "Pane",
+    "bindings": {
+      "ctrl-e": "project_panel::ToggleFocus",
+      "ctrl-h": "pane::ActivatePreviousItem",
+      "ctrl-l": "pane::ActivateNextItem",
+      "ctrl-shift-h": "pane::SwapItemLeft",
+      "ctrl-shift-l": "pane::SwapItemRight",
+      "alt-h": "workspace::ActivatePaneLeft",
+      "alt-l": "workspace::ActivatePaneRight",
+      "alt-j": "workspace::ActivatePaneDown",
+      "alt-k": "workspace::ActivatePaneUp",
+      "alt-shift-h": "workspace::MovePaneLeft",
+      "alt-shift-l": "workspace::MovePaneRight",
+      "alt-shift-j": "workspace::MovePaneDown",
+      "alt-shift-k": "workspace::MovePaneUp",
+    },
+  },
+  {
+    "context": "ProjectPanel && not_editing",
+    "bindings": {
+      "ctrl-e": "workspace::ToggleRightDock",
+    },
+  },
+  {
+    "context": "vim_mode == visual && !menu",
+    "bindings": {
+      ">": ["action::Sequence", ["vim::Indent", "vim::RestoreVisualSelection"]],
+      "<": [
+        "action::Sequence",
+        ["vim::Outdent", "vim::RestoreVisualSelection"],
+      ],
+    },
+  },
 ]
