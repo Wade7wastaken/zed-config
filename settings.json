@@ -9,29 +9,29 @@
 {
   "colorize_brackets": true,
   "completions": {
-    "words_min_length": 4
+    "words_min_length": 4,
   },
   "snippet_sort_order": "inline",
   "sticky_scroll": {
-    "enabled": true
+    "enabled": true,
   },
   "vertical_scroll_margin": 10.0,
   "scroll_beyond_last_line": "vertical_scroll_margin",
   "which_key": {
     "delay_ms": 0,
-    "enabled": true
+    "enabled": true,
   },
   "buffer_font_weight": 350.0,
   "buffer_line_height": {
-    "custom": 1.25
+    "custom": 1.25,
   },
   "icon_theme": "VSCode Icons for Zed (Dark)",
   "redact_private_values": true,
   "collaboration_panel": {
-    "dock": "right"
+    "dock": "right",
   },
   "outline_panel": {
-    "dock": "right"
+    "dock": "right",
   },
   "git_panel": {
     "dock": "right",
@@ -100,7 +100,7 @@
   "show_whitespaces": "all",
   "ui_font_size": 15.0,
   "buffer_font_size": 15.0,
-  "theme": "One Dark Pro",
+  "theme": "One Dark",
   "lsp": {
     "rust-analyzer": {
       "initialization_options": {
