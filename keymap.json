@@ -21,6 +21,10 @@
       "alt-q": "vim::Rewrap",
       "shift-j": "editor::MoveLineDown",
       "shift-k": "editor::MoveLineUp",
+      "space a": "editor::ToggleCodeActions",
+      "space d": "editor::ToggleSelectedDiffHunks",
+      "space f": "file_finder::Toggle",
+      "space q": "pane::CloseActiveItem",
     },
   },
   {
@@ -74,5 +78,14 @@
         ["vim::Outdent", "vim::RestoreVisualSelection"],
       ],
     },
+  },
+  {
+    "context": "(ProjectPanel && not_editing)",
+    "bindings": {
+      "n": "project_panel::NewFile",
+      "shift-n": "project_panel::NewDirectory",
+      "d": "project_panel::Delete",
+      "r": "project_panel::Rename",
+    }
   },
 ]

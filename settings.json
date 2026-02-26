@@ -7,6 +7,9 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "code_actions_on_format": {
+    "source.fixAll.eslint": true,
+  },
   "colorize_brackets": true,
   "completions": {
     "words_min_length": 4,
@@ -100,12 +103,40 @@
   "show_whitespaces": "all",
   "ui_font_size": 15.0,
   "buffer_font_size": 15.0,
-  "theme": "One Dark Pro",
+  "theme": "VSCode Dark Modern",
   "lsp": {
     "rust-analyzer": {
       "initialization_options": {
         "check": {
           "command": "clippy",
+        },
+      },
+    },
+    "codebook": {
+      "initialization_options": {
+        "globalConfigPath": "C:\\Users\\David\\OneDrive\\Desktop\\test",
+      },
+    },
+    "vtsls": {
+      "settings": {
+        "typescript": {
+          "tsserver": {
+            "experimental": {
+              "enableProjectDiagnostics": true,
+            },
+          },
+          "web": {
+            "projectWideIntellisense": {
+              "enabled": true,
+            },
+          },
+        },
+      },
+    },
+    "eslint": {
+      "settings": {
+        "experimental": {
+          "useFlatConfig": false,
         },
       },
     },
