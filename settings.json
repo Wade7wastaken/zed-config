@@ -178,11 +178,6 @@
         }
       }
     },
-    "codebook": {
-      "initialization_options": {
-        "globalConfigPath": "C:\\Users\\David\\OneDrive\\Desktop\\test"
-      }
-    },
     "vtsls": {
       "settings": {
         "typescript": {
