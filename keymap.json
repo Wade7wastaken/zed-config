@@ -89,4 +89,10 @@
       "space": "project_panel::Open",
     }
   },
+  {
+    "context": "VimControl && !menu",
+    "unbind": {
+      "ctrl-q": "vim::ToggleVisualBlock"
+    }
+  }
 ]
