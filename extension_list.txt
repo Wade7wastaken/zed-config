@@ -1,0 +1,9 @@
+HTML
+Git Firefly
+TOML
+SQL
+VSCode Dark Modern
+Emmet
+Prisma
+VSCode Icons
+Codebook Spell Checker
